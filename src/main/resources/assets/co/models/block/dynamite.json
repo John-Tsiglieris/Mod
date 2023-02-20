@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "co:block/dynamite_bottom",
+    "side": "co:block/dynamite_side",
+    "top": "co:block/dynamite_top"
+  }
+}

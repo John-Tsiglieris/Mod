@@ -1,0 +1,18 @@
+{
+  "item.co.compressed_gunpowder": "Compressed Gunpowder",
+  "item.co.climbing_pick": "Climbing Pick",
+  "item.co.jason": "Jason",
+  "item.co.shadowbeam_staff": "Shadowbeam Staff",
+  "item.co.wrench": "Wrench",
+  "item.co.zircon": "Zircon",
+  
+  "block.co.dynamite": "Dynamite",
+  "block.co.gem_infusing_station": "Gem infusing Station",
+  
+  "creativemodetab.mod_tab": "Mod Tab",
+  
+  "entity.minecraft.villager.jumpy_master": "Jumpy Master",
+  
+  "key.category.co.mod": "Mod",
+  "key.co.drink_water": "Drink Water"
+}
