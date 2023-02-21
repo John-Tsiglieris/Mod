@@ -48,7 +48,7 @@ public class Primed_Dynamite extends Entity { //Entity {
 	
 	 public Primed_Dynamite(Level p_32079_, double p_32080_, double p_32081_, double p_32082_, @Nullable LivingEntity p_32083_) {
 	      //this(CustomEntityType.DYNAMITE, p_32079_);
-		  this((EntityType<Primed_Dynamite>)CustomEntityType.DYNAMITE, p_32079_);
+		  this((EntityType<Primed_Dynamite>)CustomEntityType.PRIMED_DYNAMITE, p_32079_);
 	      this.setPos(p_32080_, p_32081_, p_32082_);
 	      double d0 = p_32079_.random.nextDouble() * (double)((float)Math.PI * 2F);
 	      this.setDeltaMovement(-Math.sin(d0) * 0.02D, (double)0.2F, -Math.cos(d0) * 0.02D);
@@ -59,20 +59,6 @@ public class Primed_Dynamite extends Entity { //Entity {
 	      this.owner = p_32083_;
 	   }
 	   
-	 
-	/*
-	 public Primed_Dynamite(Level p_32079_, double p_32080_, double p_32081_, double p_32082_, @Nullable LivingEntity p_32083_) {
-	      this(CustomEntityType.DYNAMITE, p_32079_);
-	      this.setPos(p_32080_, p_32081_, p_32082_);
-	      double d0 = p_32079_.random.nextDouble() * (double)((float)Math.PI * 2F);
-	      this.setDeltaMovement(-Math.sin(d0) * 0.02D, (double)0.2F, -Math.cos(d0) * 0.02D);
-	      this.setFuse(80);
-	      this.xo = p_32080_;
-	      this.yo = p_32081_;
-	      this.zo = p_32082_;
-	      this.owner = p_32083_;
-	   }
-	   */
 	 
 	 @Override
 	 protected void defineSynchedData() {
