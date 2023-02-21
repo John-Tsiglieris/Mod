@@ -89,11 +89,11 @@ public class CustomEntityType { //<T extends Entity> implements FeatureElement, 
 	
 	
 
-	/*
+	
 	private static <T extends Entity> EntityType<T> register(String p_20635_, EntityType.Builder<T> p_20636_) {
 	      return Registry.register(BuiltInRegistries.ENTITY_TYPE, p_20635_, p_20636_.build(p_20635_));
 	   }
-	*/
+	
 	
 	public static void register(IEventBus eventBus) {
 		ENTITY_TYPES.register(eventBus);
