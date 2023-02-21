@@ -3,6 +3,7 @@ package entity.custom;
 import java.util.function.Supplier;
 
 import com.john.mod.Mod;
+import block.ModBlocks;
 
 import block.custom.Primed_Dynamite;
 import net.minecraft.core.Registry;
@@ -49,9 +50,21 @@ public class CustomEntityType { //<T extends Entity> implements FeatureElement, 
 	                    () -> EntityType.Builder.<Primed_Dynamite>of(Primed_Dynamite::new, MobCategory.MISC)
 	        			.fireImmune().sized(0.98F, 0.98F)
 	        			.clientTrackingRange(10).updateInterval(10));
+	        			*/
+	   
+	   public static final RegistryObject<EntityType<Primed_Dynamite>> PRIMED_DYNAMITE =
+	            ENTITY_TYPES.register("dynamite",
+	                    () -> EntityType.Builder.of(Primed_Dynamite::new, ModBlocks.DYNAMITE.get().build(null)));
+	   
+	   /*
+	   public static final RegistryObject<EntityType<WraithEntity>> WRAITH =
+	            ENTITY_TYPES.register("wraith",
+	                    () -> EntityType.Builder.of(WraithEntity::new, MobCategory.MONSTER)
+	                            .sized(0.4f, 1.5f)
+	                            .build(new ResourceLocation(Mod.MOD_ID, "chomper").toString()));
 	   */
 	
-	   
+	   /*
 	 //Entity changed from Primed_Dynamite
 	   public static final RegistryObject<EntityType<Primed_Dynamite>> DYNAMITE =
 	            ENTITY_TYPES.register("dynamite",
@@ -59,6 +72,7 @@ public class CustomEntityType { //<T extends Entity> implements FeatureElement, 
 	        			.fireImmune().sized(0.98F, 0.98F)
 	        			.clientTrackingRange(10).updateInterval(10));
 	   
+	   */
 	   /*
 	 //Entity changed from Primed_Dynamite
 	   public static final RegistryObject<EntityType<Primed_Dynamite>> DYNAMITE =
